@@ -1,14 +1,40 @@
 random_seed: 42
 target: churn
-test_size: 0.2
-val_size: 0.1
-features:
-  numeric: []
-  categorical: []
-models:
-  xgboost:
-    n_estimators: 300
-    learning_rate: 0.08
-    max_depth: 5
-    subsample: 0.9
-    colsample_bytree: 0.9
+
+splits:
+  train_frac: 0.7
+  val_frac: 0.15
+  test_frac: 0.15
+
+drop_columns:
+  - Count  # constant-ish; safe to drop
+
+numeric_features:
+  - Senior Citizen
+  - Tenure Months
+  - Monthly Charges
+  - Total Charges
+  - Latitude
+  - Longitude
+
+categorical_features:
+  - Country
+  - State
+  - City
+  - Zip Code
+  - Lat Long
+  - Gender
+  - Partner
+  - Dependents
+  - Phone Service
+  - Multiple Lines
+  - Internet Service
+  - Online Security
+  - Online Backup
+  - Device Protection
+  - Tech Support
+  - Streaming TV
+  - Streaming Movies
+  - Contract
+  - Paperless Billing
+  - Payment Method
