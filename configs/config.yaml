@@ -7,10 +7,9 @@ splits:
   test_frac: 0.15
 
 drop_columns:
-  - Count  # constant-ish; safe to drop
+  - Count
 
 numeric_features:
-  - Senior Citizen
   - Tenure Months
   - Monthly Charges
   - Total Charges
@@ -18,6 +17,7 @@ numeric_features:
   - Longitude
 
 categorical_features:
+  - Senior Citizen
   - Country
   - State
   - City
