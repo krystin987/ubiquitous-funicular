@@ -11,6 +11,11 @@ from sklearn.metrics import (
 )
 import matplotlib.pyplot as plt
 
+"""
+Train a baseline Logistic Regression churn model with class weighting.
+Reference: Pedregosa et al. (2011) — scikit-learn; evaluation via ROC-AUC, F1, etc.
+"""
+
 DATA_DIR = Path("data/processed")
 MODELS_DIR = Path("models")
 REPORTS_DIR = Path("reports/figures")
