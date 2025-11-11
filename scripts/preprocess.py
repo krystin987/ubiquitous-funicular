@@ -7,6 +7,13 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.impute import SimpleImputer
 
+"""
+Preprocess the Telco Customer Churn dataset:
+- Source: IBM Sample Data Sets (2017), "Telco customer churn" [Kaggle mirror].
+- Methods: train-only imputation + one-hot encoding (scikit-learn pipelines).
+Reference: Pedregosa et al. (2011) — scikit-learn: Machine Learning in Python.
+"""
+
 CFG = Path("configs/config.yaml")
 DATA_DIR = Path("data/processed")
 
